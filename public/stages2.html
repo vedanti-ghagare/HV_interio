@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interior Design Project Stages</title>
+  <style>
+    :root {
+      --primary-dark: rgba(22, 65, 69, 1);
+      --primary-light: rgba(234, 194, 152, 1);
+      --primary-light-transparent: rgba(234, 194, 152, 0.3);
+      --bg: #f9f9f9;
+      --text: #222;
+    }* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  margin: auto;
+  padding: 2rem 1rem;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
+  background: linear-gradient(to right, var(--primary-light-transparent), var(--bg));
+}
+
+.timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 4px;
+}
+
+.step {
+  position: relative;
+  background: white;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  flex: 0 0 300px;
+  scroll-snap-align: center;
+  text-align: center;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  border-top: 5px solid var(--primary-dark);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(22,65,69,0.3);
+}
+
+.step.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 2rem;
+  height: 4px;
+  background: var(--primary-dark);
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step-number {
+  background: var(--primary-dark);
+  color: white;
+  font-weight: bold;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.step h3 {
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  color: var(--primary-dark);
+  margin: 0.5rem 0;
+}
+
+.step p {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+    padding-bottom: 2rem;
+  }
+
+  .step {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .step::after {
+    width: 4px;
+    height: 2rem;
+    right: 50%;
+    top: 100%;
+    transform: translateX(50%);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interior Design Project Stages</h1>
+  </header>
+  <section class="timeline">
+    <div class="step"><div class="step-number">1</div><h3>Initial Consultation</h3><p>We begin by understanding your lifestyle, preferences, goals, and budget. This foundational step ensures the design reflects your unique vision.</p></div>
+    <div class="step"><div class="step-number">2</div><h3>Concept Development</h3><p>We develop moodboards, color schemes, and initial sketches to give life to your desired aesthetic and functional goals.</p></div>
+    <div class="step"><div class="step-number">3</div><h3>Space Planning</h3><p>Efficient layouts are created to enhance movement, purpose, and usability while maintaining elegance and visual balance.</p></div>
+    <div class="step"><div class="step-number">4</div><h3>Design Development</h3><p>We finalize details including furniture, lighting, textures, finishes, and materials that fit the concept and space requirements.</p></div>
+    <div class="step"><div class="step-number">5</div><h3>Visualization</h3><p>We produce realistic 3D renders, technical drawings, and moodboards to visualize the design before implementation.</p></div>
+    <div class="step"><div class="step-number">6</div><h3>Implementation</h3><p>Our team coordinates with contractors and suppliers to bring the design to life while ensuring quality and timely delivery.</p></div>
+    <div class="step"><div class="step-number">7</div><h3>Final Touches</h3><p>Decor styling, layering, and accessorizing complete the project, turning a designed space into a personalized home.</p></div>
+  </section>
+  <script>
+    const steps = document.querySelectorAll('.step');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.3 });
+    steps.forEach(step => observer.observe(step));
+  </script>
+</body>
+</html>

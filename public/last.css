@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section6{
+    width: 100vw;
+    height: 100vh;
+
+}
+.navbar4{
+    height: 40vh;
+    background:  rgb(22, 65, 69);
+}
+.navlogo4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    background: url(WhatsApp\ Image\ 2025-03-30\ at\ 21.53.27_93b73a87.jpg) center center/cover no-repeat;
+    background-size: cover;
+    left: 50%;
+    right: 50%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+    border: 5PX SOLID white;
+    border-radius: 10%;
+}
+.navimg4{
+    background: url(end.jpg) center center/cover no-repeat;
+    height: 60vh;
+}
+@media (max-width:1030px) {
+    .navlogo4{
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+@media (max-width:770px) {
+    .navlogo4{
+        height: 250px;
+        width: 250px;
+    }
+    
+}
+@media (max-width:430px) {
+    .navlogo4{
+        height: 200px;
+        width: 200px;
+    }
+    
+}

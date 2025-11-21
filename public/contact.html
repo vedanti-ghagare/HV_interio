@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kumbh+Sans&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button onclick="goBack()" class="back-button"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <section class="contact">
+\
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>"A serene interior whispers peace, where every detail feels touched by a heavenly vibe ."</p>
+
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>T-4/2208,Riverwood park,<br>kalyan-shil road,<br>421204</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9004899679 / 9082840429</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text"> 
+                        <h3>Email</h3>
+                        <p>hvinterio@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-brands fa-square-instagram"></i></div>
+                    <div class="text">
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/hvinterio?igsh=MWI5ejJnZHR3YW40cQ==" class="insta">Heavenly Vibe Interio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="https://formspree.io/f/mvgakkgq" method="POST">
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="FULL NAME" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="EMAIL" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="tel" name="tel" required="required">
+                        <span>Phone No.</span>
+                    </div>
+                    <div class="inputbox">
+  <select name="flat-type" required="required">
+    <option value="" disabled selected hidden></option>
+    <option value="1BHK">1 BHK</option>
+    <option value="2BHK">2 BHK</option>
+    <option value="3BHK">3 BHK</option>
+    <option value="4BHK">4 BHK or more</option>
+    <option value="not-say">Prefer not to say</option>
+  </select>
+  <span>Flat Type</span>
+</div>
+<div class="inputbox">
+  <select name="renovate-area" required="required">
+    <option value="" disabled selected hidden></option>
+    <option value="Entire Home">Entire Home</option>
+    <option value="Hall">Hall</option>
+    <option value="Bedroom">Bedroom</option>
+    <option value="Bathroom">Bathroom</option>
+    <option value="kitchen">Kitchen</option>
+    <option value="livong room">Living room</option>
+
+    <option value="Office">Office</option>
+    <option value="not-say">Prefer not to say</option>
+
+  </select>
+  <span>Area to Renovate</span>
+</div>
+                    
+                    <div class="inputbox">
+                        <textarea name="MESSAGE" required="required"></textarea>
+                        <span>Type your message....</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="overlay"></div>
+
+    </section>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+      <!-- <script>
+        const express = require('express');
+const axios = require('axios');
+const app = express();
+
+app.use(express.json());
+
+app.post('/send-sms', async (req, res) => {
+  const { name, email, message } = req.body;
+
+  const smsText = `New contact form: ${name}, ${email}, ${message}`;
+  
+  try {
+    await axios.post('https://api.msg91.com/api/v2/sendsms', {
+      sender: 'Hvinterior',
+      route: '4',
+      country: '91',
+      sms: [{
+        message: smsText,
+        to: ['9004899679']
+      }]
+    }, {
+      headers: {
+        'authkey': 'your_msg91_api_key',
+        'Content-Type': 'application/json'
+      }
+    });
+
+    res.status(200).send('SMS sent');
+  } catch (error) {
+    res.status(500).send('SMS failed');
+  }
+});
+
+app.listen(3000, () => console.log('Server running'));
+
+      </script> -->
+</body>
+</html>

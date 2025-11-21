@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kumbh+Sans&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <nav>
+        <div class="nav-container" id="about us">
+            <div class="logo">
+                <img src="hvstudio4.png" class="nlogo">
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">HOME</a></div>
+                <div class="link"><a href="#about us">ABOUT US</a></div>
+                <div class="link"><a href="index.html#projects">PROJECTS</a></div>
+                <div class="link"><a href="#">STAGES OF WORK</a></div>
+                <div class="link"><a href="contact.html">CONTACT US</a></div>
+            </div>
+            <i class="fa-solid fa-bars" onclick="bars()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">STAGES OF WORK</a>
+                <a href="#">CONTACT US</a>
+                <i class="fa-solid fa-xmark" onclick="xmark()"></i>
+            </div>
+        </div>
+    </nav>    
+        <section>
+            <div class="main-container">
+                <div class="imge">
+                    <img src="IMG-20250428-WA0002[1].jpg" alt="hansraj" class="resimg">
+                </div>
+                <div class="content">
+                    <h1>Hey I'm <span>Hansraj</span> </h1>
+                    <div class="typewrite">I'm a<span></span></div>
+                    <p>Hansraj .M. Holmukhe, a skilled 3D Designer and
+                        Interior Designer with excellence creativity, is also a
+                        specialized artist with expertise in fine art, pencil
+                        sketching, canvas painting, and more. His artistic
+                        versatility adds a unique creative dimension to the
+                        design process.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1E2u31WsNs/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hansraj._2223?igsh=emx1eDVnNDVxbGt5"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://x.com/HVinterio?t=jy30JFL5rVIbve8TFzfWzg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section1">
+            <div class="main-container">
+                <div class="imge">
+                    <img src="IMG-20250428-WA0003[1].jpg" alt="hansraj" class="resimg">
+                </div>
+                <div class="content">
+                    <h1>Hey I'm <span>Bhagya</span> </h1>
+                    <div class="typewrighte">I'm a<span></span></div>
+                    <p>Bhagya Holmukhe, an acc
+                        omplished Instructor and
+                        Supervisor, is also renowned for her exceptional skills
+                        in Mandala art and Lippan art, which reflect her
+                        deep connection to intricate and meaningful
+                        creativity. Together, they bring a rich blend of
+                        artistic passion and professional expertise,
+                        transforming spaces with an innovative approach
+                        that reflects their artistic sensibilities and dedication
+                        to design excellence.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1E2u31WsNs/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/anu_h2805?igsh=MThudTdkZTJpOXNtNw=="><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://x.com/HVinterio?t=jy30JFL5rVIbve8TFzfWzg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+    <script>
+        function bars(){
+            const navbar=document.querySelector(".dropdown")
+            navbar.style.transform="translateY(0px)"
+        }
+        function xmark(){
+            const navbar=document.querySelector(".dropdown")
+            navbar.style.transform="translateY(-500px)"
+        }
+    </script>
+</body>
+</html>

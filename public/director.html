@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="director.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <button onclick="goBack()" class="back-button"><i class="fa-solid fa-arrow-left"></i></button>
+
+    <div class="main">
+        <div class="head">DIRECTOR ROOM</div>
+        <div class="grid">
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-1.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"This is a luxury executive office space designed to impress and inspire. The elegant use of marble, wood textures, and ambient lighting brings a bold yet refined look. The floating LED shelves and modern chandelier add a contemporary edge, while the large windows ensure a bright and welcoming environment. This office design communicates authority, sophistication, and professionalism—ideal for high-level decision-makers."</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-2.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>""This executive office embodies timeless sophistication with its rich wood accents, dramatic black cabinetry, and elegant herringbone wall detail. The natural light from the expansive windows enhances the warmth of the space, while the curated lighting adds depth and focus. The classic-meets-modern aesthetic offers both functionality and prestige—perfect for making a powerful statement. It’s a workspace designed to inspire confidence and productivity.""</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-3.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>""This modern executive office showcases minimalist luxury with clean lines, integrated lighting, and a seamless blend of matte and wood textures. The built-in storage and shelving maximize efficiency while maintaining a sleek, clutter-free appearance. Floor-to-ceiling windows enhance natural light, creating an inspiring and focused atmosphere. Ideal for professionals who value sophistication and functionality in a contemporary workspace.""</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-4.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>""This conference room is a perfect blend of contemporary elegance and functionality, featuring clean wood paneling, soft ambient lighting, and a central media display for impactful presentations. The symmetrical layout and neutral tones promote focus and collaboration, while the integrated greenery adds a refreshing touch. It’s an ideal space for executive meetings that demand clarity, professionalism, and comfort.""</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-5.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"This executive office exudes luxury and sophistication, seamlessly blending modern design with classic elements. The plush marble flooring, warm ambient lighting, and refined furnishings—including a curved-edge desk and accent chairs—create a sense of power and prestige. Textured wall panels and curated décor pieces, like the circular wall art, add personality while maintaining a polished corporate ambiance."</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="office-img-6.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"This office embraces a sleek, modern minimalism rooted in natural materials and masculine tones. The matte black backdrop and walnut cabinetry establish a rich, grounded atmosphere, while the soft lighting and streamlined furniture maintain a sense of calm authority. Leather chairs and the clean-lined desk add executive flair without excess, and the built-in shelving introduces warmth and intellectual depth."</p>
+                </div>
+            </div>
+            <!-- <div class="container" onclick="toggleFullscreen(this)">
+                <img src="armchair-green-living-room-with-copy-space.jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>“Striking a perfect balance between bold design and cozy retreat, this space is where modern sophistication meets earthy calm. The deep emerald walls create an enveloping atmosphere, ideal for moments of focused solitude. Natural wood accents and sculptural ceramics add warmth and depth, while lush greenery breathes life into the room. Whether it's for reading, reflection, or recharging, this stylish corner delivers tranquility with a contemporary edge.”</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="modern-living-room-interior-design (2).jpg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>“Bold, bright, and brimming with energy—this sun-drenched living space is a celebration of color and minimalism. The cheerful yellow sofa and matching floor lamp bring warmth and personality, while clean white accents and built-in shelving add balance and sophistication. Perfect for those who love a modern aesthetic with a playful twist, this room transforms everyday lounging into a radiant experience.”</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="be901a85-864b-492c-afbe-788a17eaea8d.jpeg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"The room exudes a minimalist yet elegant charm, with a carefully curated blend of textures and tones. The cozy pink armchair invites relaxation, framed by an inset shelf displaying tasteful décor—simple figurines, a vintage clock, and a ceramic vase. The floating wooden cabinet adds a sense of lightness and modernity, while the sleek black pendant light above adds a touch of sophistication. The vibrant green plants breathe life into the bold red backdrop, creating a balanced and visually pleasing harmony."</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="living.jpeg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"The room exudes a minimalist yet elegant charm, with a carefully curated blend of textures and tones. The cozy pink armchair invites relaxation, framed by an inset shelf displaying tasteful décor—simple figurines, a vintage clock, and a ceramic vase. The floating wooden cabinet adds a sense of lightness and modernity, while the sleek black pendant light above adds a touch of sophistication. The vibrant green plants breathe life into the bold red backdrop, creating a balanced and visually pleasing harmony."</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="9a9dd513-4ecf-48f9-a171-279d89a25a8d.jpeg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"The room exudes a minimalist yet elegant charm, with a carefully curated blend of textures and tones. The cozy pink armchair invites relaxation, framed by an inset shelf displaying tasteful décor—simple figurines, a vintage clock, and a ceramic vase. The floating wooden cabinet adds a sense of lightness and modernity, while the sleek black pendant light above adds a touch of sophistication. The vibrant green plants breathe life into the bold red backdrop, creating a balanced and visually pleasing harmony."</p>
+                </div>
+            </div>
+            <div class="container" onclick="toggleFullscreen(this)">
+                <img src="8d5d66ca-0891-4597-b8a4-0293fea7460c.jpeg" alt="living room" class="img">
+                <div class="overlay">
+                    <p>"The room exudes a minimalist yet elegant charm, with a carefully curated blend of textures and tones. The cozy pink armchair invites relaxation, framed by an inset shelf displaying tasteful décor—simple figurines, a vintage clock, and a ceramic vase. The floating wooden cabinet adds a sense of lightness and modernity, while the sleek black pendant light above adds a touch of sophistication. The vibrant green plants breathe life into the bold red backdrop, creating a balanced and visually pleasing harmony."</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    <script src="director.js"></script>
+    <!-- <script>
+        const express = require('express');
+const axios = require('axios');
+const app = express();
+
+app.use(express.json());
+
+app.post('/send-sms', async (req, res) => {
+  const { name, email, message } = req.body;
+
+  const smsText = `New contact form: ${name}, ${email}, ${message}`;
+  
+  try {
+    await axios.post('https://api.msg91.com/api/v2/sendsms', {
+      sender: 'Hvinterior',
+      route: '4',
+      country: '91',
+      sms: [{
+        message: smsText,
+        to: ['9004899679']
+      }]
+    }, {
+      headers: {
+        'authkey': 'your_msg91_api_key',
+        'Content-Type': 'application/json'
+      }
+    });
+
+    res.status(200).send('SMS sent');
+  } catch (error) {
+    res.status(500).send('SMS failed');
+  }
+});
+
+app.listen(3000, () => console.log('Server running'));
+
+      </script> -->
+</body>
+</html>
